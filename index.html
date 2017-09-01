@@ -63,6 +63,7 @@ layout: default
             <span class="next disable"><i class="fa fa-angle-right"></i></span>
             <span class="next disable"><i class="fa fa-angle-double-right"></i></span>
           {% endif %}
+          共 {{ paginator.total_pages }} 页，有 {{ paginator.total_posts }} 篇文章
         </div>
     </div>
     <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
@@ -142,6 +143,15 @@ layout: default
                       <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
                     {% endfor %}
                 </div>
+            </div>
+            <div class="side">
+                <div>
+                    <i class="fa fa-external-link"></i>
+                    喂下小松鼠吧
+                </div>
+                <ul  class="content-ul" style="padding-left: 3px;padding-right: 0px;">
+                    <object type="application/x-shockwave-flash" style="outline:none;" data="http://cdn.abowman.com/widgets/hamster/hamster.swf?" width="260" height="205"><param name="movie" value="http://cdn.abowman.com/widgets/hamster/hamster.swf?"></param><param name="AllowScriptAccess" value="always"></param><param name="wmode" value="opaque"></param></object>
+                </ul>
             </div>
 
             <!-- <div class="side">
