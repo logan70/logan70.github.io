@@ -6,7 +6,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Logan
+title: Logan  --留下学习生活中的点点滴滴
+small-title: Logan
 brief-intro: 如果前面还有路，答应我，跑下去...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://logan70.github.io" # the base hostname & protocol for your site
