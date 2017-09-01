@@ -94,10 +94,12 @@ tags:  Markdown
 
 **代码**
 
-`- 无序列表项1
+```md
+- 无序列表项1
 - 无序列表项2
 - 无序列表项3
-- 无序列表项4`
+- 无序列表项4
+```
 
 ***
 
@@ -116,10 +118,12 @@ tags:  Markdown
 
 **代码**
 
-`1. 有无序列表项1
+```md
+1. 有无序列表项1
 2. 有无序列表项2
 3. 有无序列表项3
-4. 有无序列表项4`
+4. 有无序列表项4
+```
 
 ***
 
@@ -238,17 +242,17 @@ tags:  Markdown
 **代码**
 
 ```md
-```html
-	<!DOCTYPE HTML>
-	<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>下拉菜单</title>
-	</head>
-	<body> 
-	</body>
-	</html>
-```
+	```html
+		<!DOCTYPE HTML>
+		<html>
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+			<title>下拉菜单</title>
+		</head>
+		<body> 
+		</body>
+		</html>
+		```
 ```
 
 
