@@ -1,0 +1,15 @@
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '{{ site.url }}{{ page.url }}', // 可选。默认为 location.href
+  owner: 'jandaes',
+  repo: 'Jandaes.github.io',
+  oauth: {
+    client_id: '9c8af932feb852ff6c0d',
+    client_secret: '31f7e74d31f4eebeed307cf684956358d6f2fa6a',
+  },
+})
+gitment.render('container')
+</script>

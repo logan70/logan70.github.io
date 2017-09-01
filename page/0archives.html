@@ -3,7 +3,6 @@ layout: default
 title: 归档
 permalink: /archive/
 icon: archive
-type: page
 ---
 
 <!-- <h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1> -->
@@ -30,7 +29,7 @@ type: page
                 <time>
                 {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
                 </time>
-                <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <a class="title" href="{{ post.url }}">{{ post.title }}</a>
 
                 {% include category.html %}
                 {% include tag.html %}
@@ -46,7 +45,7 @@ type: page
             <!-- Content -->
             <div class="side content">
                 <div>
-                    Content
+                    年份归档
                 </div>
                 <ul id="content-side" class="content-ul">
                     {% assign counter = 0 %}
@@ -55,7 +54,7 @@ type: page
                           {% assign prevyear = post.previous.date | date: "%Y" %}
                           {% assign counter = counter | plus: 1 %}
                           {% if thisyear != prevyear %}
-                            <li><a data-scroll href="#y{{ post.date | date: '%Y' }}">{{ thisyear }} ({{ counter }})</a></li>
+                            <li><a class="scroll" href="#y{{ post.date | date: '%Y' }}">{{ thisyear }} ({{ counter }})</a></li>
                             {% assign counter = 0 %}
                           {% endif %}
                         {% endfor %}

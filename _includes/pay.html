@@ -1,0 +1,163 @@
+<style>
+.dashang {
+    border-left: 6px #E78384 solid;
+    border-right: 6px #E78384 solid;
+    background: #f4f4f4;
+    text-align: left;
+    margin: 20px 0 20px 0;
+    padding: 20px 0 20px 10px;
+    color: #333;
+    font-size: 9pt;
+    line-height: 22px;
+    text-align: center;
+}
+
+.dashang p {
+    font-size: 15px;
+}
+
+.dashang .button {
+    padding: 6px 30px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: #E78384;
+    border-radius: 4px;
+
+}
+.dashang .button:hover{
+    background-color: #f49484;
+}
+
+.dashang-modal {
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.dashang-modal .bg {
+    position: absolute;
+    opacity: .6;
+    filter: alpha(opacity=30);
+    background: #000;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.dashang-modal .content {
+    width: 390px;
+    height: 425px;
+    top: 50%;
+    left: 50%;
+    margin: -190px 0 0 -195px;
+    font-size: 14px;
+    background: #E8EEF3;
+    position: fixed;
+    padding: 0 20px;
+    z-index: 9999;
+    overflow: hidden;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, .3);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.dashang-modal .close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font: 400 24px/24px Arial;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    font-weight: 700;
+    line-height: 20px;
+    opacity: .6;
+    filter: alpha(opacity=20);
+}
+
+.dashang-modal .title {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 40px 0 0;
+    color: #555;
+}
+
+.dashang-modal .tab {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.dashang-modal .tab span {
+    font-size: 14px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    cursor: pointer;
+    background: #fff;
+    margin: 12px 5px;
+}
+
+.dashang-modal .img {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+</style>
+
+<div class="dashang">
+    <p>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</p> 
+    <a class="button" href="javascript:;">¥ 打赏博主</a> 
+</div>
+
+    
+<div class="dashang-modal" style="display: none;">
+    <div class="bg"></div>
+    <div class="content"> <i class="close">x</i> 
+        <div class="title">如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>
+        <div class="tab"> <span class="curr" dashang="wechat">微信</span>  <span dashang="alipay" class="">支付宝</span>  <span dashang="qqwallet" class="">QQ钱包</span> 
+        </div>
+        <div class="img">
+            <img alt="留记录 开发技术博客 微信打赏二维码" src="/images/wechat.png" id="dashang-wechat" style="display: inline-block;">
+            <img alt="留记录 开发技术博客 支付宝打赏二维码" src="/images/alipay.png" id="dashang-alipay" style="display: none;">
+            <img alt="留记录 开发技术博客 qq钱包打赏二维码" src="/images/qqwallet.png" id="dashang-qqwallet" style="display: none;">
+        </div>
+    </div>
+</div>
+
+<script src="//cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+<script type="text/javascript">
+    $('.dashang-modal .tab span').on('click',function(){
+        var $this = $(this)
+        dashang = $this.attr('dashang');
+        $('.dashang-modal .img img').hide(200);
+        $('#dashang-'+dashang).show(200);
+
+        $('.dashang-modal .tab span').removeClass('curr');
+        $this.addClass('curr');
+    });
+
+    $('.dashang-modal .close,.dashang-modal .bg').on('click',function(){
+        $('.dashang-modal').hide(200);
+    });
+
+
+    $('.dashang .button').on('click',function(){
+        $('.dashang-modal').show(200);
+    });
+</script>

@@ -4,14 +4,14 @@ layout: default
 
 <div class="page clearfix" index>
     <div class="left">
-        <h1>Welcome to Logan's Blog!</h1>
-        <small>这里记录着我的前端学习之路</small>
+        <h1>Welcome to My Blog!</h1>
+        <small>这里记录着我的生活学习之路</small>
         <hr>
         <ul>
             {% for post in paginator.posts %}
               <li>
                 <h2>
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{ post.title }}</a>
                 </h2>
                 <div class="label">
                     <div class="label-card">
@@ -37,7 +37,7 @@ layout: default
                     {{post.excerpt}}
                 </div>
                 <div class="read-all">
-                    <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>Read All</a>
+                    <a  href="{{ post.url | prepend: site.baseurl }}" target="_blank"><i class="fa fa-newspaper-o"></i>阅读全文</a>
                 </div>
                 <hr>
               </li>
@@ -50,7 +50,7 @@ layout: default
         <div class="pagination">
           {% if paginator.previous_page %}
             <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous"><i class="fa fa-angle-left"></i></a>
+            <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-angle-left"></i></a>
           {% else %}
             <span class="previous disable"><i class="fa fa-angle-double-left"></i></span>
             <span class="previous disable"><i class="fa fa-angle-left"></i></span>
@@ -58,11 +58,12 @@ layout: default
           <span class="page_number ">{{ paginator.page }}/{{ paginator.total_pages }}</span>
           {% if paginator.next_page %}
             <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-angle-right"></i></a>
-            <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}" class="next"><i class="fa fa-angle-double-right"></i></a>
+            <a href="/page{{ paginator.total_pages }}" class="next"><i class="fa fa-angle-double-right"></i></a>
           {% else %}
             <span class="next disable"><i class="fa fa-angle-right"></i></span>
             <span class="next disable"><i class="fa fa-angle-double-right"></i></span>
           {% endif %}
+          共 {{ paginator.total_pages }} 页，有 {{ paginator.total_posts }} 篇文章
         </div>
     </div>
     <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
@@ -75,7 +76,7 @@ layout: default
                 </div>
                 <ul class="content-ul" recent>
                     {% for post in site.posts offset: 0 limit: 10  %}
-                        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
@@ -87,7 +88,7 @@ layout: default
                     分类
                 </div>
                 <ul class="content-ul" cate>
-                    {% for category in site.categories %}
+                    {% for category in site.categories order:ascending %}
                     <li>
                         <a href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}" class="categories-list-item" cate="{{ category | first }}">
                             <span class="name">
@@ -119,7 +120,7 @@ layout: default
 
                     {% if max == min %}
                         {% assign diff = 1 %}
-                    {% else %}
+                    {% else %}    
                         {% assign diff = max | minus: min %}
                     {% endif %}
 
@@ -154,15 +155,17 @@ layout: default
                 </ul>
             </div>
 
-            <!-- <div class="side">
-                <div>
-                    <i class="fa fa-external-link"></i>
-                    Links
+            <!--
+                <div class="side">
+                    <div>
+                        <i class="fa fa-external-link"></i>        
+                        Links                
+                    </div>
+                    <ul  class="content-ul">
+                       
+                    </ul>
                 </div>
-                <ul  class="content-ul">
-
-                </ul>
-            </div> -->
+            -->
         </div>
     </div>
 </div>

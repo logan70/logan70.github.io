@@ -3,7 +3,6 @@ layout: default
 title: 分类
 permalink: /category/
 icon: th-list
-type: page
 ---
 
 
@@ -21,7 +20,7 @@ type: page
                             <time>
                             {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
                             </time>
-                            <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                            <a class="title" href="{{ post.url }}">{{ post.title }}</a>
 
                             {% include category.html %}
                             {% include tag.html %}
@@ -39,12 +38,12 @@ type: page
             <!-- Content -->
             <div class="side content">
                 <div>
-                    Content
+                    分类
                 </div>
                 <ul id="content-side" class="content-ul">
                     {% for category in site.categories%}
                         <li>
-                            <a data-scroll href="#{{ category | first }}">
+                            <a class="scroll" href="#{{ category | first }}">
                                 {{ category | first }} ({{ category | last | size }})
                             </a>
                         </li>

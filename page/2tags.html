@@ -3,7 +3,6 @@ layout: default
 title: 标签
 permalink: /tag/
 icon: tags
-type: page
 ---
 
 <div class="page clearfix">
@@ -25,7 +24,7 @@ type: page
                 <time>
                 {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
                 </time>
-                <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <a class="title" href="{{ post.url }}">{{ post.title }}</a>
 
                 {% include category.html %}
                 {% include tag.html %}
@@ -42,12 +41,12 @@ type: page
             <!-- Content -->
             <div class="side content">
                 <div>
-                    Content
+                    标签
                 </div>
                 <ul id="content-side" class="content-ul">
                     {% for tag in sortedtags %}
                     <li>
-                        <a data-scroll href="#{{ tag }}">
+                        <a class="scroll" href="#{{ tag }}">
                             {{ tag }} ({{ site.tags[tag].size }})
                         </a>
                     </li>
@@ -56,7 +55,7 @@ type: page
                 </ul>
             </div>
             <!-- 其他div框放到这里 -->
-            <!-- <div class="side">bbbb</div> -->
+            <!-- <div class="side">bbbb</div> --> 
         </div>
     </div>
 </div>
