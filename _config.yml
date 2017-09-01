@@ -7,7 +7,7 @@
 
 # Site settings
 title: Logan
-brief-intro: Front-end Beginner
+brief-intro: 如果前面还有路，答应我，跑下去...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://logan70.github.io" # the base hostname & protocol for your site
 
