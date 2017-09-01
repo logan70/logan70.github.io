@@ -3,6 +3,7 @@ layout: post
 title:  "我的第一个Markdown文件"
 date:   2017-09-01 16:44:05
 categories: Markdown
+author: Logan
 tags:  Markdown
 ---
 

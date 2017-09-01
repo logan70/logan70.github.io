@@ -2,7 +2,8 @@
 layout: post
 title:  "如何使用 Markdown编辑器写博客"
 categories: Markdown
-tags:  MD 编辑器 
+author: Logan
+tags:  Markdown 编辑器 
 ---
 
 * content
