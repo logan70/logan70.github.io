@@ -3,8 +3,8 @@ layout: post
 title:  "调试Javascript-断点设置"
 date:   2017-09-01 23:44:05
 categories: Javascript
-author: Javascript Breakpoint
-tags:  Markdown
+author: Logan
+tags:  Javascript Breakpoint
 ---
 
 * content
