@@ -95,7 +95,7 @@ tags:  Markdown
 
 **图片**
 
-![This is a image](../images/2016-11-05/01.jpg "image's title")
+![This is a image](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2016-11-05/01.jpg "image's title")
 
 ***
 
