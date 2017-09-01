@@ -6,26 +6,26 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 留记录    --留下技术中的点点滴滴
-small-title: 留记录
-brief-intro: 耐心点,等待时间给你所有答案...
+title: Logan    --前端小白的点点滴滴
+small-title: Logan70
+brief-intro: 只要前面还有路，答应我，跑下去...
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://liujilu.com/" # the base hostname & protocol for your site
+url: "https://logan70.github.io/" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
 #twitter_username: gaohaoyang126
 #facebook_username: gaohaoyang.water
-github_username:  jandaes
-email: 158464459@qq.com
-weibo_username: 2978755757
-zhihu_username: deng-dai-shi-hou
+github_username:  logan70
+email: logan70@163.com
+weibo_username: 
+zhihu_username: 
 #linkedIn_username: gaohaoyang
 dribbble_username:
 
-keywords: 留记录,个人博客,等待时候,java技术,SSM,Linux,Spring MVC,Spring,Mybatis,html,css,javascript,jquery,集群,负载均衡
-description: 留记录,专门留下自己技术博文以及生活中的点点滴滴.
+keywords: Logan70个人博客,html,css,javascript,jquery...
+description: 留下自己学习前端以及生活中的点点滴滴.
 description_footer: 本站记录我学习生活之旅的沿途风景！
 
 
