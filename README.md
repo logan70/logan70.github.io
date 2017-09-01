@@ -1,14 +1,14 @@
 # 关于这个简洁明快的博客主题 🤘🤘🤘
 
-[![GitHub stars](https://img.shields.io/github/stars/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/Gaohaoyang/gaohaoyang.github.io/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/Gaohaoyang/gaohaoyang.github.io/network)
-[![GitHub issues](https://img.shields.io/github/issues/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues)
-[![GitHub release](https://img.shields.io/github/release/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/Gaohaoyang/gaohaoyang.github.io/releases)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Gaohaoyang/gaohaoyang.github.io/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/logan70/logan70.github.io/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/logan70/logan70.github.io/network)
+[![GitHub issues](https://img.shields.io/github/issues/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/logan70/logan70.github.io/issues)
+[![GitHub release](https://img.shields.io/github/release/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/logan70/logan70.github.io/releases)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/logan70/logan70.github.io/master/LICENSE)
 
 随着 jekyll 的版本升级，同时我也想重构我的旧版博客主题，因此在这个月对博客进行了重构加改版，这个仓库存放我的新博客，并且我也会一直使用这个主题。目前基本改版完成，后续可能还会有些细节上的修补。
 
-**博客访问地址：[http://gaohaoyang.github.io/](http://gaohaoyang.github.io/)**。若您喜欢这个新的博客主题，请给我个star以示鼓励吧，欢迎大家使用。
+**博客访问地址：[http://logan70.github.io/](http://logan70.github.io/)**。若您喜欢这个新的博客主题，请给我个star以示鼓励吧，欢迎大家使用。
 
 ## 目录
 
@@ -304,60 +304,7 @@ Configuration file: E:/GitWorkSpace/blog/_config.yml
 
 没什么问题，推送到自己的博客仓库即可。
 
-## 捐助 donate
 
-您也可以捐助我喝杯咖啡！感谢！
-
-<!-- PayPal
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="Q44JFSYQXBFL2">
-<input type="image" src="https://www.paypalobjects.com/webstatic/en_US/btn/btn_donate_cc_147x47.png" border="0" name="submit" alt="PayPal——最安全便捷的在线支付方式！">
-<img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1">
-</form><br>      -->
-
-|                                   支付宝                                    |                                  微信支付                                   |                                                                     PayPal                                                                     |
-|:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------:|
-| ![alipay](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bk8ikzoij20740743z5.jpg) | ![wechat](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bkdw3bslj206z06q3z6.jpg) | [![PayPal](https://www.paypalobjects.com/webstatic/paypalme/images/pp_logo_small.png)<br>Donate via PayPal ](https://www.paypal.me/gaohaoyang) |
-
-感谢捐赠的小伙伴！！！
-
-* 2017.05.25 收到 微信用户 ¥1.00
-* 2017.05.19 收到 风之筝 ¥6.66
-* 2017.05.16 收到 张驰 ¥6.00
-* 2017.05.03 收到 希成 ¥6.66
-* 2017.04.24 收到 deezer ¥10.00
-* 2017.04.13 收到 Abraham Xiao ¥30.00
-* 2017.04.11 收到 微信用户 ¥4.00
-* 2017.04.01 收到 Elvin Zeng ¥6.66
-* 2017.03.13 收到 微信用户 ¥6.66
-* 2017.03.04 收到 史莱姆 ¥9.90
-* 2017.03.02 收到 梦想小熊 ¥6.66
-* 2017.02.27 收到 夏友杰 ¥6.66
-* 2017.02.26 收到 兰缘小妖 ¥10.00
-* 2017.02.25 收到 微信用户 ¥6.66
-* 2017.02.22 收到 微信用户 ¥6.66
-* 2017.02.15 收到 微信用户 ¥10.00
-* 2017.02.06 收到 Light ¥10.24
-* 2017.01.15 收到 微信用户 ¥6.66
-* 2016.12.17 收到 HitNoah ¥12.00
-* 2016.12.09 收到 情融 ¥6.60
-* 2016.11.16 收到 微信用户 ¥6.66
-* 2016.11.16 收到 微信用户 ¥1.00
-* 2016.10.24 收到 奇峰 ¥6.66
-* 2016.10.21 收到 旭廷 ¥10.00
-* 2016.09.24 收到 鑫 ¥6.66
-* 2016.08.25 收到 Erlend Aakre $2.50
-* 2016.08.10 收到 微信用户 ¥4.40
-* 2016.07.25 收到 邓炳初 ¥6.66
-* 2016.07.11 收到 彦风 ¥6.66
-* 2016.07.07 收到 Klci ¥2.50
-* 2016.05.08 收到 1057 ¥10.57
-* 2016.05.07 收到 吴林 ¥2
-* 2016.04.29 收到 北归 ¥10
-* 2016.04.28 收到 魏楚阳_Brian ¥2
-* 2016.04.28 收到 薛彬 ¥8.8
 
 ## Update Log
 
