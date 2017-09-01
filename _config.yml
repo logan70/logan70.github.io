@@ -6,41 +6,37 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Logan    --前端小白的点点滴滴
-small-title: Logan70
-brief-intro: 只要前面还有路，答应我，跑下去...
+title: HyG
+brief-intro: Front-end Dev Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://logan70.github.io/" # the base hostname & protocol for your site
+url: "https://gaohaoyang.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
-#twitter_username: gaohaoyang126
-#facebook_username: gaohaoyang.water
-github_username:  logan70
-email: logan70@163.com
-weibo_username: 
-zhihu_username: 
-#linkedIn_username: gaohaoyang
+twitter_username: gaohaoyang126
+facebook_username: gaohaoyang.water
+github_username:  Gaohaoyang
+email: gaohaoyang126@126.com
+weibo_username: 3115521wh
+zhihu_username: gaohaoyang
+linkedIn_username: gaohaoyang
 dribbble_username:
 
-keywords: Logan70个人博客,html,css,javascript,jquery...
-description: 留下自己学习前端以及生活中的点点滴滴.
-description_footer: 本站记录我学习生活之旅的沿途风景！
-
+description_footer: 本站记录我前端之旅的沿途风景！
 
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: janda
-disqus_shortname: #gaohaoyang
+duoshuo_shortname: #hygblog
+disqus_shortname: gaohaoyang
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
-baidu_tongji_id: 7c79ce8b12138941bb600c05c4fb1a7f
-google_analytics_id: UA-103416878-1 # google 分析追踪id
+baidu_tongji_id: cf8506e0ef223e57ff6239944e5d46a4
+google_analytics_id: UA-72449510-4 # google 分析追踪id
 
 # Build settings
 markdown: kramdown
@@ -57,7 +53,7 @@ category_dir: category/
 tag_dir: tag/
 
 # excerpt
-excerpt_separator: <!--more-->
+excerpt_separator: "\n\n\n\n"
 
 # paginate
 gems: [jekyll-paginate]
