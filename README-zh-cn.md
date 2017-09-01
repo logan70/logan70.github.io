@@ -1,14 +1,14 @@
 # 关于这个简洁明快的博客主题 🤘🤘🤘
 
-[![GitHub stars](https://img.shields.io/github/stars/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/Gaohaoyang/gaohaoyang.github.io/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/Gaohaoyang/gaohaoyang.github.io/network)
-[![GitHub issues](https://img.shields.io/github/issues/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues)
-[![GitHub release](https://img.shields.io/github/release/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/Gaohaoyang/gaohaoyang.github.io/releases)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Gaohaoyang/gaohaoyang.github.io/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/logan70/logan70.github.io.svg)](https://github.com/logan70/logan70.github.io/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/logan70/logan70.github.io.svg)](https://github.com/logan70/logan70.github.io/network)
+[![GitHub issues](https://img.shields.io/github/issues/logan70/logan70.github.io.svg)](https://github.com/logan70/logan70.github.io/issues)
+[![GitHub release](https://img.shields.io/github/release/logan70/logan70.github.io.svg)](https://github.com/logan70/logan70.github.io/releases)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/logan70/logan70.github.io/master/LICENSE)
 
 随着 jekyll 的版本升级，同时我也想重构我的旧版博客主题，因此在这个月对博客进行了重构加改版，这个仓库存放我的新博客，并且我也会一直使用这个主题。目前基本改版完成，后续可能还会有些细节上的修补。
 
-**博客访问地址：[http://gaohaoyang.github.io/](http://gaohaoyang.github.io/)**。若您喜欢这个新的博客主题，请给我个star以示鼓励吧，欢迎大家使用。
+**博客访问地址：[http://logan70.github.io/](http://logan70.github.io/)**。若您喜欢这个新的博客主题，请给我个star以示鼓励吧，欢迎大家使用。
 
 ## 目录
 
@@ -119,7 +119,7 @@ disqus_shortname: xxx
 
 ### Footer
 
-**欢迎使用这个主题，使用时请保留 footer 上的模板主题来源。** Theme designed by [HyG](https://github.com/gaohaoyang).
+**欢迎使用这个主题，使用时请保留 footer 上的模板主题来源。** Theme designed by [HyG](https://github.com/logan70).
 ![footer](http://ww3.sinaimg.cn/large/7011d6cfjw1f3bepd8002j20hl02ct95.jpg)
 
 ### 统计
@@ -180,7 +180,7 @@ gem install jekyll
 title: HyG
 brief-intro: Front-end Dev Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://gaohaoyang.github.io" # the base hostname & protocol for your site
+url: "http://logan70.github.io" # the base hostname & protocol for your site
 ```
 
 #### 链接信息
@@ -189,13 +189,13 @@ url: "http://gaohaoyang.github.io" # the base hostname & protocol for your site
 
 ```yml
 # other links
-twitter_username: gaohaoyang126
-facebook_username: gaohaoyang.water
-github_username:  Gaohaoyang
-email: gaohaoyang126@126.com
+twitter_username: logan70126
+facebook_username: logan70.water
+github_username:  logan70
+email: logan70126@126.com
 weibo_username: 3115521wh
-zhihu_username: gaohaoyang
-linkedIn_username: gaohaoyang
+zhihu_username: logan70
+linkedIn_username: logan70
 dribbble_username:
 
 description_footer: 本站记录我前端之旅的沿途风景！
@@ -212,7 +212,7 @@ description_footer: 本站记录我前端之旅的沿途风景！
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
 duoshuo_shortname: #hygblog
-disqus_shortname: gaohaoyang
+disqus_shortname: logan70
 ```
 
 运行成功后，可以在 disqus 或 多说 的后台管理页看到相关信息。
@@ -296,7 +296,7 @@ Configuration file: E:/GitWorkSpace/blog/_config.yml
 
 在本地访问 localhost:4000 即可看到博客主页。
 
-若安装了 Foxit 福昕pdf阅读器可能会占用4000端口，关闭 Foxit服务 或切换 jekyll 端口即可解决。详情见文章：[对这个 jekyll 博客主题的改版和重构](http://gaohaoyang.github.io/2016/03/12/jekyll-theme-version-2.0/)
+若安装了 Foxit 福昕pdf阅读器可能会占用4000端口，关闭 Foxit服务 或切换 jekyll 端口即可解决。详情见文章：[对这个 jekyll 博客主题的改版和重构](http://logan70.github.io/2016/03/12/jekyll-theme-version-2.0/)
 
 若正在使用全局代理，可能会报错502，关闭全局代理即可。
 
@@ -319,7 +319,7 @@ Configuration file: E:/GitWorkSpace/blog/_config.yml
 
 |                                   支付宝                                    |                                  微信支付                                   |                                                                     PayPal                                                                     |
 |:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------:|
-| ![alipay](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bk8ikzoij20740743z5.jpg) | ![wechat](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bkdw3bslj206z06q3z6.jpg) | [![PayPal](https://www.paypalobjects.com/webstatic/paypalme/images/pp_logo_small.png)<br>Donate via PayPal ](https://www.paypal.me/gaohaoyang) |
+| ![alipay](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bk8ikzoij20740743z5.jpg) | ![wechat](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bkdw3bslj206z06q3z6.jpg) | [![PayPal](https://www.paypalobjects.com/webstatic/paypalme/images/pp_logo_small.png)<br>Donate via PayPal ](https://www.paypal.me/logan70) |
 
 感谢捐赠的小伙伴！！！
 
@@ -363,13 +363,13 @@ Configuration file: E:/GitWorkSpace/blog/_config.yml
 
 ### 2017.2.28
 
-- `[^]` 修复目录滚动 bug [#22](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/22), [#48](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/48)
+- `[^]` 修复目录滚动 bug [#22](https://github.com/logan70/logan70.github.io/issues/22), [#48](https://github.com/logan70/logan70.github.io/issues/48)
 
 ### 2016.6.20
 
 * `[+]` 在文章页中添加上一篇和下一篇文章链接。
 * `[^]` 修改 font-family 顺序，避免微软雅黑将单引号解析为全角。
-* `[^]` 修复标签云算法中被除数为零的 bug。[#26](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/26), [#28](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/28), [#30](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/30)
+* `[^]` 修复标签云算法中被除数为零的 bug。[#26](https://github.com/logan70/logan70.github.io/issues/26), [#28](https://github.com/logan70/logan70.github.io/issues/28), [#30](https://github.com/logan70/logan70.github.io/issues/30)
 
 ### 2016.5.11 v2.0.1
 
@@ -399,8 +399,8 @@ Configuration file: E:/GitWorkSpace/blog/_config.yml
 * `[^]` 使用 Masonry 重写了 Demo 页中的瀑布流布局，响应式交互体验更好
 * `[-]` 去除了 jQuery 和 BootStrap，使得加载速度更快
 
-关于旧版博客，我不再维护，同时我把代码转移到了另一个仓库，见 [Gaohaoyang/old-blog](https://github.com/Gaohaoyang/old-blog)。
+关于旧版博客，我不再维护，同时我把代码转移到了另一个仓库，见 [logan70/old-blog](https://github.com/logan70/old-blog)。
 
 ## License
 
-[MIT License](https://github.com/Gaohaoyang/gaohaoyang.github.io/blob/master/LICENSE.md)
+[MIT License](https://github.com/logan70/logan70.github.io/blob/master/LICENSE.md)
