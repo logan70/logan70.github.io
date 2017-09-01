@@ -108,21 +108,12 @@ tags:  Markdown
 
 **代码块**
 
-```javascripts
+```html
 	<!DOCTYPE HTML>
 	<html>
 	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>下拉菜单</title>
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-	<style>
-	    .dropdown{
-	        float: left;
-	    }body {
-	  padding: 50px 100px;
-	}
-	</style>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>下拉菜单</title>
 	</head>
 	<body> 
 	</body>
