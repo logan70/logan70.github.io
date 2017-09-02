@@ -90,9 +90,9 @@ iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 
 
 **移动WEB最佳Viewport设置**
 
-布局viewport=设备宽度=度量viewport
+- 布局viewport=设备宽度=度量viewport
 
-代码如下
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-```
+- 代码如下
+	```html
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	```
