@@ -139,3 +139,15 @@ iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 
 	>![Flexbox](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/flex-model.jpg "Flex弹性盒模型")
 - Flex弹性盒模型完整版
 ![Flexbox](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/flex-model-all.bmp "Flex弹性盒模型完整版")
+
+## 响应式设计
+
+**Flexbox弹性盒子布局的兼容性**
+
+- iOS可以使用最新的flex布局
+- 安卓4.4以下，只能兼容旧版本的flexbox布局
+- 安卓4.4及以上，可以使用最新的flex布局
+
+**新旧flex版本属性替换**
+
+![Flexbox](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/flex-version.jpg "新旧flex版本属性替换")
