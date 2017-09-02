@@ -15,7 +15,6 @@ tags:  Mobile
 
 ***
 
-
 >- **px:** css pixels 逻辑像素，浏览器使用的抽象单位
 - **dp/dt:** device independent pixels 设备无关的像素
 - **dpr:** devicePixelsRatio 设备像素缩放比
@@ -47,3 +46,11 @@ iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 
 => 326ppi属于Retina屏幕,dpr=2 => 1px = (dpr)<sup>2</sup> * dp
 => iPhone5的屏幕为320*568px
 ```
+
+## Viewport视图
+
+**手机浏览器默认为我们做了两件事情**
+
+1. 页面渲染在一个980px(iox)的Viewport里
+2. 缩放
+	>渲染在Viewport里是为了排版正确
