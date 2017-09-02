@@ -96,3 +96,16 @@ iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 
 	```html
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	```
+
+## Viewport - coding
+
+**设计移动WEB**
+
+- 方案1
+	>根据设备的实际宽度来设计(常用)
+	>手机款320px，就拿320px来设计
+
+- 方案2
+	>1px=1dp
+	>缩放0.5。根据设备的物理像素dp等于抽象像素px来设计。1像素边框和高清图片都不需要额外处理。
+
