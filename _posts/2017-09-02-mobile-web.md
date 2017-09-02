@@ -129,5 +129,5 @@ iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 
 
 - Flex等比划分
 	>![Flexbox](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/Flex-1.jpg "flex等比划分")
-- Flex混合花粉
+- Flex混合划分
 	>![Flexbox](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/flexboxmix.jpg "flex混合划分")
