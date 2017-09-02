@@ -37,6 +37,9 @@ iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 
 
 >**Retina(高清屏)**dpr都大于等于2.
 
+
+
+
 **以iPhone5为例子的流程图**
 
 ```flow
@@ -66,3 +69,19 @@ iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 
 - 链接不可点。
 - 有缩放，缩放后又有滚动。
 >简单来说就是整个页面的设计都是不规范，用户交互不友好。
+
+## Viewport - meta标签
+
+**标签代码**
+
+```html
+<meta name="viewport" content="name=value, name=value">
+```
+
+**Content内可配置参数**
+
+- width: 设置布局viewpoint的特定值("device-width")
+- initial-scale: 设置页面的初始缩放
+- minimum-scale: 最小缩放
+- maximum-scale: 最大缩放
+- user-scalable: 用户可否缩放(no)
