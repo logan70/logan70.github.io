@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "调试Javascript-断点设置"
-date:   2017-09-01 16:44:05
+date:   2017-09-01 23:44:05
 categories: Javascript
 author: Javascript Breakpoint
 tags:  Markdown
@@ -10,7 +10,6 @@ tags:  Markdown
 * content
 {:toc}
 
-[TOC]
 
 ## 如何设置断点
 
@@ -43,7 +42,7 @@ tags:  Markdown
 
 右键单击尚未设置断点的行号，然后点击`Add conditional breakpoint`(添加条件断点)来创建一个条件断点。如果你已经在一行代码上添加了断点，并且希望使断点有条件，右键单击该断点，并点击`Edit breakpoint`(编辑断点)。
 
-在文本字段中输入你的条件，并按 <kbd>Enter</kbd> 键。
+在文本字段中输入你的条件，并按 `Enter` 键。
 
 ### 删除或禁用一个行号断点
 
@@ -109,9 +108,9 @@ tags:  Markdown
 
 要在`XHR`的`URL`与某个字符串匹配时中断，请使用`Sources`(源文件)面板上的`XHR Breakpoints`(XHR断点)窗格。
 
-点击“+”(加号)按钮添加一个新的断点模式。在文本字段中输入你的字符串，并按<kbd>Enter</kbd>键保存。
+点击“+”(加号)按钮添加一个新的断点模式。在文本字段中输入你的字符串，并按`Enter`键保存。
 
-提示：点击“+”(加号)，然后立即按<kbd>Enter</kbd>键，可以在发送任何`XHR`之前触发断点。
+提示：点击“+”(加号)，然后立即按`Enter`键，可以在发送任何`XHR`之前触发断点。
 
 ## 当一个事件触发时中断
 
