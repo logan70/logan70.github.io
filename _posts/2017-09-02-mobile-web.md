@@ -135,3 +135,5 @@ iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 
 	>![Flexbox](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/css3-center.jpg "CSS3不定宽高的水平垂直居中")
 - Flex不定宽高的水平垂直居中
 	>![Flexbox](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/flex-center.jpg "Flex不定宽高的水平垂直居中")
+- Flex弹性盒模型
+	>![Flexbox](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/flex-model.jpg "Flex弹性盒模型")
