@@ -10,10 +10,7 @@ tags:  Mobile
 * content
 {:toc}
 
-
 ## pixels 像素基础
-
-***
 
 **像素概念**
 
@@ -62,11 +59,10 @@ iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 
 	>不是原页面的大小，如ios默认viewpoint是980px。
 - visual viewpoint ： 度量/视口 viewpoint ，进行窗口缩放`scale`，展示页面内容。
 
-**为什么不使用默认的980px的布局viewpoint
+**为什么不使用默认的980px的布局viewpoint**
 
 - 宽度不可控制，不同系统不同设备的默认值都可能不同。
 - 页面缩小显示，交互不友好。
 - 链接不可点。
 - 有缩放，缩放后又有滚动。
-
 >简单来说就是整个页面的设计都是不规范，用户交互不友好。
