@@ -20,8 +20,8 @@ tags:  Mobile
 - **dp/dt:** device independent pixels 设备无关的像素
 - **dpr:** devicePixelsRatio 设备像素缩放比
 - **计算公式:** 1px = (dpr)<sup>2</sup> * dp
-- iphone5分辨率：640dp*1136dp
-为什么iphone5是320px*568px？
+- iphone5分辨率：640dp * 1136dp
+为什么iphone5是320px * 568px？
 iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 568px
 
 ***
@@ -30,13 +30,17 @@ iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 
 - **DPI:** 打印机每英寸可以喷的墨汁点
 - **计算公式:** 以iPhone5为例：√(1336<sup>2</sup>+640<sup>2</sup>)/4=326ppi
 
->|  /  |ldpi  |mdpi  |hdpi  |xhdpi  |
->|-----|------|------|------|-------|
->|ppi  |120   |160   |240   |320    |
->|默认缩放比|0.75|1.0|1.5   |2.0    |
+|  /  |ldpi  |mdpi  |hdpi  |xhdpi  |
+|-----|------|------|------|-------|
+|ppi  |120   |160   |240   |320    |
+|默认缩放比|0.75|1.0|1.5   |2.0    |
+
 >**Retina(高清屏)**dpr都大于等于2.
 
-以iPhone5为例子的流程图
+
+
+
+**以iPhone5为例子的流程图**
 
 ```flow
 设备分辨率1136*640 dp => √(1336<sup>2</sup>+640<sup>2</sup>)/4=326ppi
