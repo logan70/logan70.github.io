@@ -10,6 +10,8 @@ tags:  Mobile
 * content
 {:toc}
 
+# 移动WEB的基础知识
+
 ## pixels 像素基础
 
 **像素概念**
@@ -108,6 +110,17 @@ iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 
 
 - 方案2
 	>1px=1dp
-	
+
 	>缩放0.5。根据设备的物理像素dp等于抽象像素px来设计。1像素边框和高清图片都不需要额外处理。
+
+# 高效的移动WEB布局
+
+## Flexbox弹性盒子布局
+
+**CSS属性设置**
+
+1. 父元素设置display属性，表示使用弹性布局。
+2. 子元素设置flex属性，表示占容器的比例
+
+![Flexbox](../images/2017-09-02/flexboxmix.jpg)
 
