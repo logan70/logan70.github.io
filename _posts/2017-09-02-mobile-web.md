@@ -58,11 +58,11 @@ iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 
 
 **两个Viewport**
 
-- layout viewport ： 布局 viewpoint ，在底层进行页面渲染布局。
-	>不是原页面的大小，如ios默认viewpoint是980px。
-- visual viewpoint ： 度量/视口 viewpoint ，进行窗口缩放`scale`，展示页面内容。
+- layout viewport ： 布局 viewport ，在底层进行页面渲染布局。
+	>不是原页面的大小，如ios默认viewport是980px。
+- visual viewport ： 度量/视口 viewport ，进行窗口缩放`scale`，展示页面内容。
 
-**为什么不使用默认的980px的布局viewpoint**
+**为什么不使用默认的980px的布局viewport**
 
 - 宽度不可控制，不同系统不同设备的默认值都可能不同。
 - 页面缩小显示，交互不友好。
@@ -80,8 +80,19 @@ iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 
 
 **Content内可配置参数**
 
-- width: 设置布局viewpoint的特定值("device-width")
+- width: 设置布局viewport的特定值("device-width")
+	>width=device-width 是为了让**layout viewport**(布局viewport)等于**设备的尺寸**。
 - initial-scale: 设置页面的初始缩放
+	>initial-scale=1 是为了让**visual viewport**(度量viewport)等于**layout viewport**(布局viewport)。
 - minimum-scale: 最小缩放
 - maximum-scale: 最大缩放
 - user-scalable: 用户可否缩放(no)
+
+**移动WEB最佳Viewport设置**
+
+布局viewport=设备宽度=度量viewport
+
+代码如下
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+```
