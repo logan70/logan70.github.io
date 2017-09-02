@@ -123,5 +123,5 @@ iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 
 
 1. 父元素设置display属性，表示使用弹性布局。
 2. 子元素设置flex属性，表示占容器的比例
-	>![Flexbox](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/flexboxmix.jpg "flex代码")
+	>![Flexbox](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/flex.jpg "flex代码")
 
