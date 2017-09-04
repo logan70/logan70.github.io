@@ -28,6 +28,9 @@ tags:  Tools JavaScript
 <link href="js/mf-pattern/slide3D.css" type="text/css" /><!--引入风格css文件-->
 ```
 
+
+
+
 ## Step 2. 创建myFocus标准的html结构，并填充你的内容
 
 ```html
