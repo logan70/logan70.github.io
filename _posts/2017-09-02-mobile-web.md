@@ -160,3 +160,58 @@ iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 
 
 ![响应式设计](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/responsive-media-type.jpg "响应式设计媒体查询类型及参数")
 
+## 移动Web特别样式处理
+
+**高清图片**
+
+![特别样式处理](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/style-img.jpg "特别样式处理之高清图片")
+
+**一像素边框**
+
+![特别样式处理](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/style-border.jpg "特别样式处理-一像素边框")
+
+**相对单位rem**
+
+>根据html的font-size为相对单位
+
+![特别样式处理](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/style-rem.jpg "特别样式处理-相对单位rem")
+
+>一般来讲font-size是不应该使用rem等相对单位的。因为字体的大小是趋于阅读的实用性，并不适合排版布局。
+>同理趋向于一些固定的元素的特性。我们不使用rem而是使用px去确保在不同屏幕上的表现一致(跟使用rem的目的相反)
+
+**多行文本溢出**
+
+- 单行文本溢出
+	```html
+	.inaline{
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	```
+
+- 多行文本溢出
+	```html
+	.inmorelines{
+		display: -webkit-box !important;
+		overflow: hidden;
+
+		text-overflow: ellipsis;
+		word-break: break-all;
+
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+	}
+
+#终端交互优化
+
+## Tap基础事件
+
+**300ms的故事**
+
+![Tap基础事件](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/mobile-300ms.jpg "Tap基础事件-300ms延迟")
+
+**Tap基础事件**
+
+![Tap基础事件](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/mobile-tap.jpg "Tap基础事件-自定义Tap事件原理")
+
