@@ -10,7 +10,9 @@ tags:  Tools JavaScript
 * content
 {:toc}
 
->[myFocus源码](http://zeptojs.com "Zepto.js官网")
+[myFocus源码](https://github.com/logan70/myfocus "myFocus源码")
+[myFocus效果展示](https://logan70.github.io/myfocus/ "myFocus效果展示")
+[myFocus使用教程](https://logan70.github.io/2017/09/04/how-to-use-myfocus/ "myFocus使用教程")
 
 # myFocus使用步骤
 
