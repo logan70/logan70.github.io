@@ -215,3 +215,48 @@ iphone5的drp=2，1px=4dp，所以长度上1px=2dp，640dp => 320px；1136dp => 
 
 ![Tap基础事件](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/mobile-tap.jpg "Tap基础事件-自定义Tap事件原理")
 
+**Tap“点透bug”**
+
+点击遮罩层，会触发下面的按钮
+
+![Tap基础事件](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/mobile-bug.jpg "Tap基础事件-Tap“点透bug”")
+
+**Tap透传的解决方案**
+
+![Tap基础事件](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/mobile-bug-fix.jpg "Tap基础事件-Tap透传的解决方案")
+
+## Touch基础事件
+
+**触摸Touch**
+
+![Touch基础事件](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/mobile-touch.jpg "Touch基础事件")
+
+**每个touch对象包含的属性**
+
+![Touch基础事件](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/mobile-touch-object.jpg "Touch基础事件-每个touch对象包含的属性")
+
+**Android的bug**
+
+![Touch基础事件](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/mobile-android-bug.jpg "Touch基础事件-Android的bug")
+
+**弹性滚动**
+
+![Touch基础事件](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/mobile-scroll1.jpg "Touch基础事件-弹性滚动1")
+
+![Touch基础事件](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/mobile-scroll2.jpg "Touch基础事件-弹性滚动2")
+
+**下拉刷新**
+
+>顶端下拉一小点距离，页面弹性滚动向下
+
+**上拉加载**
+
+>使用scroll事件，而不是touch事件(Android有bug)
+
+# 课程总结
+
+![课程总结](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-02/summary.jpg "课程总结")
+
+
+
+
