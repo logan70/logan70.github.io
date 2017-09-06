@@ -33,6 +33,9 @@ tags:  Tools PhotoShop
 
 # 三种切图方法
 
+
+
+
 ## 图层切图
 
 1. 选中图层或组
@@ -55,7 +58,7 @@ tags:  Tools PhotoShop
 
 2. 然后右击图层，将图层转换为智能对象
 	![PS切图](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-06/ps1.png "PS切图")
-	
+
 3. 选择选框工具，将你要切的图层圈起来
 	![PS切图](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-06/ps2.png "PS切图")
 4. 接着按`Ctrl+C`复制，再按`Ctrl+N`新建，注意背景颜色设置为透明
