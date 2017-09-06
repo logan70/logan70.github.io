@@ -35,6 +35,21 @@ tags:  Tools PhotoShop
 
 
 
+# Adobe Photoshop CC 2017 下载及破解
+
+[Adobe Photoshop CC 2017 下载地址](https://pan.baidu.com/s/1jHAJXHW#list/path=%2F&parentPath=%2Fps%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80 "Adobe Photoshop CC 2017 下载地址")
+
+[Adobe Photoshop CC 2017 破解器下载地址](https://down9.3987.com/2010/amtemulator.3987.com.rar "Adobe Photoshop CC 2017 破解器下载地址")
+
+1. 进入**Adobe Photoshop CC 2017**下载地址并根据系统位数下载安装包
+2. 下载完后解压，点击Setup.exe，根据提示步骤进行安装
+3. 下载**Adobe Photoshop CC 2017破解器**并解压
+4. 打开`amtemu.v0.9.2-painter.exe`并选择相应版本，点击`Install`(如果选择Adobe Photoshop CC 2017不行，就选择Adobe Photoshop CC 2015.5再试一次)
+5. 选择安装目录,一般是`C:\Program Files\Adobe\Adobe Photoshop CC 2017`
+6. 选择目录下载的amtlib.dll，点击打开来进行安装破解。如下图提示安装成功即说明破解成功
+![Adobe Photoshop CC 2017](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-06/ps-setup.jpg "Adobe Photoshop CC 2017")
+
+
 # 三种切图方法
 
 ## 图层切图
@@ -52,7 +67,7 @@ tags:  Tools PhotoShop
 
 	![PS切图](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-06/ps3.png "PS切图")
 
-5. 点击确定，再按`Vtrl + V`粘贴，我们就得到要切的图层了
+5. 点击确定，再按`Ctrl + V`粘贴，我们就得到要切的图层了
 
 	![PS切图](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-06/ps4.png "PS切图")
 
