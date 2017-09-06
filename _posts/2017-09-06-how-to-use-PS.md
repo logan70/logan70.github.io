@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "HTML5学习"
+title:  "前端PS切图"
 date:   2017-09-06 23:44:05
-categories: HTML
+categories: Tools
 author: Logan
-tags:  HTML HTML5
+tags:  Tools Photoshop
 ---
 
 * content
