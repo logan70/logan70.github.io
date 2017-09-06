@@ -40,31 +40,51 @@ tags:  Tools PhotoShop
 
 1. 选中图层或组
 2. 然后右击图层，将图层转换为智能对象
+
 	![PS切图](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-06/ps1.png "PS切图")
+
 3. 选择选框工具，将你要切的图层圈起来
+
 	![PS切图](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-06/ps2.png "PS切图")
+
 4. 接着按`Ctrl+C`复制，再按`Ctrl+N`新建，注意背景颜色设置为透明
+
 	![PS切图](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-06/ps3.png "PS切图")
+
 5. 点击确定，再按`Vtrl + V`粘贴，我们就得到要切的图层了
+
 	![PS切图](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-06/ps4.png "PS切图")
+
 6. 再按`Ctrl + Alt + Shift + S`保存，记住背景图存为PNG24格式
+
 	![PS切图](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-06/ps5.png "PS切图")
+
 7. 存储到我们要存的文件夹下，就大功告成了
 
 ## 切片切图
 
 1. 拉辅助线，如下
+
 	![PS切图](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-06/ps1.png "PS切图")
 
 2. 然后右击图层，将图层转换为智能对象
+
 	![PS切图](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-06/ps1.png "PS切图")
 
 3. 选择选框工具，将你要切的图层圈起来
+
 	![PS切图](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-06/ps2.png "PS切图")
+
 4. 接着按`Ctrl+C`复制，再按`Ctrl+N`新建，注意背景颜色设置为透明
+
 	![PS切图](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-06/ps3.png "PS切图")
+
 5. 点击确定，再按`Vtrl + V`粘贴，我们就得到要切的图层了
+
 	![PS切图](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-06/ps4.png "PS切图")
+
 6. 再按`Ctrl + Alt + Shift + S`保存，记住背景图存为PNG24格式
+
 	![PS切图](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-09-06/ps5.png "PS切图")
+	
 7. 存储到我们要存的文件夹下，就大功告成了
