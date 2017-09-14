@@ -2,7 +2,7 @@
 layout: post
 title:  "复习JavaScript--JavaScript语句"
 categories: Javascript
-date:   2017-09-13 16:48:05
+date:   2017-09-14 16:48:05
 author: Logan
 tags:  Javascript
 ---
@@ -125,25 +125,25 @@ var day=new Date().getDay(),
 switch (day)
 {
 case 0:
-  x="Today it's Sunday";
+  x="Today is Sunday";
   break;
 case 1:
-  x="Today it's Monday";
+  x="Today is Monday";
   break;
 case 2:
-  x="Today it's Tuesday";
+  x="Today is Tuesday";
   break;
 case 3:
-  x="Today it's Wednesday";
+  x="Today is Wednesday";
   break;
 case 4:
-  x="Today it's Thursday";
+  x="Today is Thursday";
   break;
 case 5:
-  x="Today it's Friday";
+  x="Today is Friday";
   break;
 case 6:
-  x="Today it's Saturday";
+  x="Today is Saturday";
   break;
 }
 document.write(x);
@@ -216,7 +216,7 @@ while (条件){
 ```js
 var i = 0;
 while (i<5){
-  document.write("The number is " + i + "<br>");
+  document.write(i);    //01234
   i++;
 }
 ```
@@ -238,7 +238,7 @@ do{
 ```js
 var i = 0;
 do{
-  document.write("The number is " + i + "<br>");
+  document.write(i);    //01234
   i++;
 }while (i<5);
 ```
@@ -264,7 +264,7 @@ for (i=0;i<10;i++){
 ```js
 for (i=0;i<10;i++){
   if (i==3){
-    break;
+    continue;
   }
   document.write(i);   //012456789
 }
