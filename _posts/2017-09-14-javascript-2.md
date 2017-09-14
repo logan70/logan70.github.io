@@ -151,4 +151,121 @@ document.write(x);
 
 > case有几个都行，default可以没有。当case1~n都不满足的时候，则default。default并不一定要在最后<br>在case所执行的语句后添加上一个break语句。否则就直接继续执行下面的case中的语句
 
-# for循环语句
+# for 循环语句
+
+## for 循环
+
+**语法：**
+
+```js
+for(循环初值;循环条件;步长){
+	被执行的代码块
+}
+```
+
+**实例：**
+
+```js
+//1+2+....+99的值
+var sum = 0;
+for(var i = 0;i < 100;i++){
+	sum += i;
+}
+```
+
+**循环嵌套规则**
+
+- 外层为假时内层不执行
+- 先执行外层再执行内层，直至内层条件为假时再返回外层去执行
+
+## for/in 循环
+
+> 用来遍历对象的属性
+
+**实例：**
+
+```js
+var x;
+var txt="";
+var person={fname:"Bill",lname:"Gates",age:56}; 
+
+for (x in person)
+{
+txt += person[x];
+}
+
+document.write(txt);   //BillGates56
+```
+
+# while 循环语句
+
+## while 循环
+
+> While 循环会在指定条件为真时循环执行代码块
+
+**语法：**
+
+```js
+while (条件){
+  需要执行的代码
+}
+```
+
+**实例：**
+
+```js
+var i = 0;
+while (i<5){
+  document.write("The number is " + i + "<br>");
+  i++;
+}
+```
+
+> 如果忘记改变条件中所用变量的值，该循环永远不会结束，可能导致浏览器崩溃
+
+## do/while 循环
+
+**语法：**
+
+```js
+do{
+  需要执行的代码
+}while (条件);
+```
+
+**实例：**
+
+```js
+var i = 0;
+do{
+  document.write("The number is " + i + "<br>");
+  i++;
+}while (i<5);
+```
+
+> `do/while`循环至少会执行一次，即使条件是 false
+
+> **`for`循环**适合已知循环次数的循环体<br>
+> **`while`循环**适合未知循环次数的循环体
+
+# break 退出循环
+
+```js
+for (i=0;i<10;i++){
+  if (i==3){
+    break;
+  }
+  document.write(i);   //012
+}
+```
+
+# continue 退出本次循环
+
+```js
+for (i=0;i<10;i++){
+  if (i==3){
+    break;
+  }
+  document.write(i);   //012456789
+}
+```
