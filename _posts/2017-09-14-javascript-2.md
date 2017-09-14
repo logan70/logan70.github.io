@@ -10,7 +10,7 @@ tags:  Javascript
 * content
 {:toc}
 
-# if语句
+# if分支语句
 
 > if语句可以嵌套使用
 
@@ -32,6 +32,9 @@ if(time > 22){
 	document.write('晚安');
 }
 ```
+
+
+
 
 ***
 
@@ -90,7 +93,7 @@ if(score < 60){
 }
 ```
 
-# switch语句
+# switch分支语句
 
 **多分支控制**
 
@@ -146,4 +149,6 @@ case 6:
 document.write(x);
 ```
 
-> case有几个都行，default可以没有。当case1~n都不满足的时候，则default。default并不一定要在最后。<br>在case所执行的语句后添加上一个break语句。否则就直接继续执行下面的case中的语句
+> case有几个都行，default可以没有。当case1~n都不满足的时候，则default。default并不一定要在最后<br>在case所执行的语句后添加上一个break语句。否则就直接继续执行下面的case中的语句
+
+# for循环语句
