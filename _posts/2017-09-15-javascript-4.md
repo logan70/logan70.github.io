@@ -60,7 +60,7 @@ for(var i = 0, len = array.length;i < len;i++){
 
 ## 数组的方法
 
-**push()**
+### push()
 
 语法：`array.push(newele1,newele2...)`
 
@@ -74,7 +74,7 @@ arr.push(6,9);    //4
 arr;              //[1,3,6,9]
 ```
 
-**unshift()**
+### unshift()
 
 语法：`array.unshift(newele1,newele2...)`
 
@@ -88,7 +88,7 @@ arr.unshift(6,9);    //4
 arr;                 //[6,9,1,3]
 ```
 
-**pop()**
+### pop()
 
 语法：`array.pop()`
 
@@ -102,7 +102,7 @@ arr.pop();    //3
 arr;          //[1,2]
 ```
 
-**shift()**
+### shift()
 
 语法：`array.shift()`
 
@@ -116,7 +116,7 @@ arr.shift();    //1
 arr;          //[2,3]
 ```
 
-**join()**
+### join()
 
 语法：`array.join(separator)`
 
@@ -131,7 +131,7 @@ var arr = [1,2,3];
 arr.join();    //"1,2,3"
 ```
 
-**reverse()**
+### reverse()
 
 语法：`array.reverse()`
 
@@ -144,7 +144,7 @@ var arr = [1,2,3];
 arr.reverse();    //[3,2,1]
 ```
 
-**sort()**
+### sort()
 
 语法：`array.sort(sortby)`
 
@@ -166,7 +166,7 @@ var arr = [1,23,45,18,215];
 arr.sort(function(a,b){return b - a;});    //[215, 45, 23, 18, 1]
 ```
 
-**concat()**
+### concat()
 
 语法：`array.concat(arr1,arr2...)`
 
@@ -180,7 +180,7 @@ var arr2 = [4,5,6];
 arr1.concat(arr2);    //[1, 2, 3, 4, 5, 6]
 ```
 
-**slice()**
+### slice()
 
 语法：`array.slice(start[,end])`
 
@@ -195,7 +195,7 @@ var arr1 = [1,2,3,4,5,6];
 arr1.slice(1,4);    //[2, 3, 4]
 ```
 
-**splice()**
+### splice()
 
 语法：`array.splice(index,count,item1,.....,itemX)`
 
@@ -224,7 +224,7 @@ arr1;                      //[1, 18, 28, 4, 5, 6]
 
 > `indexOf()`和`lastIndexOf()`方法是ES5新增，兼容性要求`IE9+`
 
-**indexOf()**
+### indexOf()
 
 语法：`array.indexOf(searchvalue,startindex)`
 
@@ -243,7 +243,7 @@ arr1.indexOf(3,3);        //6
 arr1.indexOf(8);          //-1
 ```
 
-**lastIndexOf()**
+### lastIndexOf()
 
 语法：`array.lastIndexOf(searchvalue,startindex)`
 
