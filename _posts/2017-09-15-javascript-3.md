@@ -48,6 +48,9 @@ function add(num1,num2){
 document.write(add(2,5));
 ```
 
+
+
+
 > 函数会在执行完`return`语句之后停止并立即退出
 
 > `return`语句也可以不带任何的返回值，用于提前停止函数执行又不需要返回值的情况
