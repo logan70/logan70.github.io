@@ -239,7 +239,7 @@ console.log(getFileFormat(url));     //".mp4"
 function camel(str){
 	//将str拆分为数组
 	var arr = str.split("-"),
-		newstr = arr[0];
+	    newstr = arr[0];
 	for(var i = 1,len = arr.length;i<len;i++){
 		newstr += arr[i].charAt(0).toUpperCase() + arr[i].slice(1)
 	}
