@@ -32,6 +32,9 @@ Math.max(5,-4,9,108,-55);    // 108
 Math.max(5,-4,9,108,"a");    // NaN
 ```
 
+
+
+
 ## Math.ceil()
 
 语法：`Math.ceil(num)`
