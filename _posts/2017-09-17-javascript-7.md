@@ -30,6 +30,9 @@ var box = document.getElementById('box');
 box.style.fontSize = '16px';
 ```
 
+
+
+
 ## innerHTML
 
 - `ele.innerHTML`
