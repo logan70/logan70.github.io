@@ -60,7 +60,7 @@ document.getElementById("header");
 
 **confirm**
 
-语法：`window.confirm('content';)`
+语法：`window.confirm('content');`
 
 功能：显示一个带有指定消息和确认及取消按钮的对话框
 
@@ -111,7 +111,7 @@ clearTimeout(timer);
 
 **取消间歇调用**
 
-语法：`clearInterval(id_of_timeout);`
+语法：`clearInterval(id_of_interval);`
 
 ```js
 var timer = setInterval(function{
@@ -200,13 +200,13 @@ clearInterval(timer);
 
 ## 分析下面的URL
 
- > http://www.example.com:8080/test.php?user=admin&pwd=admin#login
-想得到整个如上的完整url，我们用：location.href; 
-得到传输协议http:,我们用：location.protocol; 
-得到主机名连同端口www.example.com:8080，我们用：location.host; 
-得到主机名www.example.com，我们用：location.hostname; 
-得到主机后部分不包括问号?后部分的/test.php，就用我们刚才讲的：location.pathname; 
-得到url中问号?之后井号#之前的部分?user=admin&pwd=admin，我们就用： location.search; 
+ > http://www.example.com:8080/test.php?user=admin&pwd=admin#login <br>
+想得到整个如上的完整url，我们用：location.href; <br>
+得到传输协议http:,我们用：location.protocol; <br>
+得到主机名连同端口www.example.com:8080，我们用：location.host; <br>
+得到主机名www.example.com，我们用：location.hostname; <br>
+得到主机后部分不包括问号?后部分的/test.php，就用我们刚才讲的：location.pathname;<br> 
+得到url中问号?之后井号#之前的部分?user=admin&pwd=admin，我们就用： location.search; <br>
 得到#之前的部分#login，我们就用location.hash
 
 # history
