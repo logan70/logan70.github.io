@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "compass入门"
+title:  "Compass入门"
 categories: CSS
 date:   2017-09-25 15:48:05
 author: Logan

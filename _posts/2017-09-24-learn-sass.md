@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "sass入门"
+title:  "Sass入门"
 categories: CSS
 date:   2017-09-24 15:48:05
 author: Logan
