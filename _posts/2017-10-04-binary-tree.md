@@ -28,6 +28,10 @@ tags:  binary
 - 根结点只有右子树
 - 根结点既有左子树又有右子树
 
+
+
+
+
 ![二叉树的五种基本形态](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-10-06/binary2.jpg "二叉树的五种基本形态")
 
 # 特殊二叉树
