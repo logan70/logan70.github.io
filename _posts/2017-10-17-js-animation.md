@@ -335,6 +335,3 @@ lis[0].onmouseover = function(){
     });
 }
 ```
-
-![flex-basis](https://raw.githubusercontent.com/logan70/logan70.github.io/master/images/2017-10-06/flex7.png "flex-basis")
-
