@@ -45,13 +45,17 @@ build: {
 }
 ```
 
+
+
+
+
 # 3.打包
 
 ```js
 $ npm run build
 ```
 
-# 4.建立远成仓库、关联、推送
+# 4.建立远程仓库、关联、推送
 
 - 第1步：创建一个名为`vue-demo`的Repository
 
@@ -76,7 +80,7 @@ $ git add -A
 $ git add -f dist  // 强制添加dist文件夹，因为.gitignore文件中定义了忽略该文件
 
 // 提交文件
-$ git comit -m "my vue project"
+$ git commit -m "my vue project"
 
 // 推送到远程库
 $ git push -u origin master
