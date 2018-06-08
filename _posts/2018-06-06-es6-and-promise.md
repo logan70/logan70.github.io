@@ -224,3 +224,112 @@ new Promise(
 })
 ```
 
+- Promise 是一个代理对象，它和原先要进行的操作并无关系
+- Promise 通过引入一个回调，避免更多的回调
+
+**Promise 的状态**
+
+- pending [待定]初始状态
+- fulfilled [实现]操作成功
+- rejected [被否决]操作失败
+
+> Promise状态发生改变，就会触发`.then()`里的响应函数处理后续步骤 <br/>
+> Promise 状态一经改变，不会再变
+
+## `.then()`
+
+- 状态响应函数可以返回新的Promise，或其他值，或者不返回值
+- 如果返回新的Promise，那么下一级`.then()`会在新Promise状态改变之后执行
+- 如果返回其他任何值或不返回值，则会立刻执行下一级`.then()`
+
+## 小测验
+
+假设`doSomething`与`doSomethingElse`及`finalHandler`函数都返回一个Promise实例，那么下面四中Promise的区别是什么
+
+```js
+// #1
+doSomeThing().then(function() {
+  return doSomethingElse()
+}).then(finalHandler)
+/**
+ * doSomething ->
+ * doSomethingElse(undefined) ->
+ * finalHandler(resultOfDoSomethingElse)
+ **/
+
+// #2
+doSomething().then(function() {
+  doSomethingElse()
+}).then(finalHandler)
+/**
+ * doSomething ->
+ * doSomethingElse(undefined) + finalHandler(undefined) 几乎同时执行
+ **/
+
+// #3
+doSomething().then(doSomethingElse()).then(finalHandler)
+/**
+ * doSomething + doSomethingElse(undefined) 几乎同时执行 ->
+ * finalHandler(resultOfDoSomething) 
+ **/
+
+// #4
+doSomething().then(doSomethingElse).then(finalHandler)
+/**
+ * doSomething ->
+ * doSomethingElse(resultOfDoSomething) ->
+ * finalHandler(resultOfDoSomethingElse)
+ **/
+```
+
+## `.catch()`
+
+建议在所有队列最后都加上`.catch()`，以避免漏掉错误处理造成意想不到的问题
+
+## `Promise.all()`
+
+- **批量执行**：用于将多个Promise实例，包装成一个新的Promise实例
+- `Promise.all([p1,p2,p3,...])`
+- 数组里可以是Promise对象，也可以是别的值，只有Promise会等待状态改变
+- 当所有子Promise都完成，该Promise完成，返回值是全部值得数组
+- 有任何一个失败，该Promise失败，返回值是第一个失败的子Promise的结果
+
+```js
+console.log('here we go')
+Promise.all([1, 2, 3])
+    .then( all => {
+        console.log('1：', all)
+        return Promise.all([ function () {
+            console.log('ooxx')
+        }, 'xxoo', false])
+    })
+    .then( all => {
+        console.log('2：', all)
+        let p1 = new Promise( resolve => {
+            setTimeout(() => {
+                resolve('I\'m P1')
+            }, 1500)
+        })
+        let p2 = new Promise( (resolve, reject) => {
+            setTimeout(() => {
+                resolve('I\'m P2')
+            }, 1000)
+        })
+        let p3 = new Promise( (resolve, reject) => {
+            setTimeout(() => {
+                reject('I\'m P3')
+            }, 3000)
+        })
+        return Promise.all([p1, p2, p3])
+    })
+    .then( all => {
+        console.log('all', all)
+    })
+    .catch( err => {
+        console.log('Catch：', err)
+    })
+// here we go
+// 1： [ 1, 2, 3 ]
+// 2： [ [Function], 'xxoo', false ]
+// Catch： I'm P3
+```
