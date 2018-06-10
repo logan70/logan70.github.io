@@ -291,7 +291,7 @@ doSomething().then(doSomethingElse).then(finalHandler)
 - **批量执行**：用于将多个Promise实例，包装成一个新的Promise实例
 - `Promise.all([p1,p2,p3,...])`
 - 数组里可以是Promise对象，也可以是别的值，只有Promise会等待状态改变
-- 当所有子Promise都完成，该Promise完成，返回值是全部值得数组
+- 当所有子Promise都完成，该Promise完成，返回值是全部值的数组
 - 有任何一个失败，该Promise失败，返回值是第一个失败的子Promise的结果
 
 ```js
@@ -333,3 +333,125 @@ Promise.all([1, 2, 3])
 // 2： [ [Function], 'xxoo', false ]
 // Catch： I'm P3
 ```
+
+**Promise.all()最常见就是和.map*()连用**
+
+## 实现队列
+
+希望动作按照一定顺序、逐个进行
+
+```js
+let promise = doSomething()
+promise = promise.then(doSomethingElse)
+promise = promise.then(doSomethingElsel2)
+promise = promise.then(doSomethingElsel3)
+```
+
+**第一种方法：使用`.forEach()`**
+
+```js
+function queue(things) {
+  let promise = Promise.resolve()
+  things.forEach(things => {
+    promise = promise.then(() => {
+      return new Promise(resolve => {
+        doThing(thing, () => {
+          resolve()
+        })
+      })
+    })
+  })
+  return promise
+}
+
+queue(['lots', 'of', 'things', ...])
+```
+
+**第二种方法：使用`.reduce()`**
+
+```js
+function queue(things) {
+  return things.reduce((promise, thing) => {
+    return promise.then(() => {
+      return new Promise(resolve => {
+        dothing(thing, () => {
+          resolve()
+        })
+      })
+    })
+  }, Promise.resolve())
+}
+
+queue(['lots', 'of', 'things', ...])
+```
+
+## Promise.resolve()
+
+- 参数为空，返回一个状态为fulfilled的Promise实例
+- 参数是一个跟Promise无关的值，同上，不过fulfilled响应函数会得到这个参数
+- 参数为Promise实例，则返回该实例，不作任何修改
+- 参数为thenable，立刻执行他的.then()
+
+> thenable 即一个对象内存在一个`then()`方法
+
+```js
+Promise.resolve()
+  .then( () => {
+    console.log('Step 1', value)
+    return Promise.resolve('Hello', value)
+  })
+  .then( value => {
+    console.log(value, 'World')
+    return Promise.resolve(new Promise( resolve => {
+      setTimeout(() => {
+        resolve('Good')
+      }, 2000)
+    }))
+  })
+  .then( value => {
+    console.log(value, ' evening')
+    return Promise.resolve({
+      then() {
+        console.log(', everyone')
+      }
+    })
+  })
+  // Step 1 undefined
+  // Hello World
+  // Good evening
+  // , everyone
+```
+
+## Promise.reject()
+
+返回一个状态为`rejected`的Promise实例
+
+- Promise.reject()不认thenable
+
+## Promise.race()
+
+类似Promise.all()，区别在于它有任意一个完成就算完成
+
+```js
+let p1 = new Promise(resolve => {
+  setTimeout(() => {
+    resolve('This is p1')
+  }, 5000)
+})
+let p2 = new Promise(resolve => {
+  setTimeout(() => {
+    resolve('This is p2')
+  }, 2000)
+})
+
+Promise.race([p1, p2])
+  .then((value) => {
+    console.log(value)
+  })
+
+// This is p2 (after 2000 ms)
+```
+
+**常见用法**
+
+把异步操作和定时器放在一起，如果定时器先触发，就认为超时，告知用户
