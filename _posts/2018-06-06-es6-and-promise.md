@@ -2,7 +2,7 @@
 layout: post
 title:  "慕课ES6入门与Promise入门"
 categories: Javascript
-date:   2018-05-05 11:48:05
+date:   2018-06-06 11:48:05
 author: Logan
 tags:  ES6 Promise
 ---
@@ -160,7 +160,7 @@ var Person = function() {
     }
   }
 }
-var Person = new Person()
+var person = new Person()
 // ES5
 var Person = {
   name: 'es5',
