@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "移动端滚动穿透问题解决方案"
-categories: Node
+categories: Mobile
 date:   2018-10-19 11:48:05
 author: Logan
 tags:  Mobile
@@ -105,4 +105,15 @@ let modalManager = (function() {
     }
   }
 })();
+```
+
+## 3. 阻止弹窗的touchmove默认事件
+
+**缺点**：导致弹窗内部也无法滚动，适用于弹窗内无滚动内容的情况
+
+```js
+document.querySelector('.modal').addEventListener('touchmove', e => {
+  e = e || window.event
+  e.preventDefault()
+}, false)
 ```
