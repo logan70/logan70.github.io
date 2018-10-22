@@ -56,6 +56,10 @@ let modalManager = (function() {
 })();
 ```
 
+
+
+
+
 ## 2. `body` 设置`position: fixed;`
 
 当弹窗弹出时，设置`body`元素的`positon`属性为`fixed`，使其脱离文档流，去除滚动。
