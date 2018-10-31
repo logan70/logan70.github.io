@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Node.js入门-5-数据库MongoDB"
+title:  "Node.js入门-7-数据库MongoDB"
 categories: Node
 date:   2018-07-26 11:48:05
 author: Logan
-tags:  node.js
+tags:  Node.js
 ---
 
 * content

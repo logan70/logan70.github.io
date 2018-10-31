@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Node.js入门-4-Buffer"
+title:  "Node.js入门-4-Buffer(缓冲器)"
 categories: Node
 date:   2018-07-04 11:48:05
 author: Logan
-tags:  node.js
+tags:  Node.js
 ---
 
 * content
@@ -25,7 +25,7 @@ tags:  node.js
 
 在v6.0之前创建Buffer对象直接使用`new Buffer()`构造函数来创建对象实例，但是Buffer对内存的权限操作相比很大，可以直接捕获一些敏感信息，所以在v6.0以后，官方文档里面建议使用 `Buffer.from()` 接口去创建Buffer对象。
 
-## 1. `Buffer.from(string[, encoding])`
+## 1. Buffer.from(string[, encoding])
 
 新建一个包含所给的JavaScript字符串string的Buffer。encoding参数指定string的字符编码，默认为utf-8。
 
@@ -58,7 +58,7 @@ console.log(buf4)
 
 
 
-## 2. b. `Buffer.alloc(size[, fill[, encoding]])`
+## 2. Buffer.alloc(size[, fill[, encoding]])
 
 分配一个大小为 size 字节的新建的 Buffer 。 如果 fill 为 undefined ，则该 Buffer 会用 0 填充。
 
@@ -70,7 +70,7 @@ const buf2 = Buffer.alloc(5, 'a')
 // 输出: <Buffer 61 61 61 61 61>
 console.log(buf2)
 ```
-## 3. `Buffer.allocUnsafe(size)
+## 3. Buffer.allocUnsafe(size)
 
 分配一个大小为 size 字节的新建的 Buffer 。 创建的 Buffer 并没有经过初始化，在内存中只要有闲置的 Buffer 就直接 “抓过来” 使用。这使得创建 Buffer 使得内存的分配非常快，但已分配的内存段可能包含潜在的敏感数据，有明显性能优势的同时又是不安全的，所以使用需格外 “小心”。
 
