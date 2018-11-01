@@ -4,7 +4,7 @@ title:  "Node.js入门-4-Buffer(缓冲器)"
 categories: Node
 date:   2018-07-04 11:48:05
 author: Logan
-tags:  Node.js
+tags:  Buffer
 ---
 
 * content
@@ -24,6 +24,10 @@ tags:  Node.js
 # 二、创建 Buffer 的方法
 
 在v6.0之前创建Buffer对象直接使用`new Buffer()`构造函数来创建对象实例，但是Buffer对内存的权限操作相比很大，可以直接捕获一些敏感信息，所以在v6.0以后，官方文档里面建议使用 `Buffer.from()` 接口去创建Buffer对象。
+
+
+
+
 
 ## 1. Buffer.from(string[, encoding])
 
@@ -53,10 +57,6 @@ const buf4 = Buffer.from(buf1)
 // 输出：this is a tést
 console.log(buf4)
 ```
-
-
-
-
 
 ## 2. Buffer.alloc(size[, fill[, encoding]])
 

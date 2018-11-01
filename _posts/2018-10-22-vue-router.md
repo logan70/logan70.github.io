@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Vue-Router学习笔记"
-categories: VUE
+categories: Vue
 date:   2018-10-22 11:48:05
 author: Logan
-tags:  vue-router
+tags:  VueRouter
 ---
 
 * content

@@ -4,7 +4,7 @@ title:  "Node.js入门-7-数据库MongoDB"
 categories: Node
 date:   2018-07-26 11:48:05
 author: Logan
-tags:  Node.js
+tags:  MongoDB
 ---
 
 * content

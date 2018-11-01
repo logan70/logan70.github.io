@@ -4,7 +4,7 @@ title:  "移动端滚动穿透问题解决方案"
 categories: Mobile
 date:   2018-10-19 11:48:05
 author: Logan
-tags:  Mobile
+tags:  滚动穿透
 ---
 
 * content

@@ -4,7 +4,7 @@ title:  "Node.js入门-6-stream(流)"
 categories: Node
 date:   2018-07-20 11:48:05
 author: Logan
-tags:  Node.js
+tags:  Stream
 ---
 
 * content
@@ -20,6 +20,10 @@ Node.js 中有四种基本的流类型：
 - `Readable` :  可读取数据的流（例如 `fs.createReadStream()`）。
 - `Duplex` :  可读又可写的流（例如 `net.Socket`）。
 - `Transform` :  在读写过程中可以修改或转换数据的 Duplex 流（例如 `zlib.createDeflate()`）。
+
+
+
+
 
 所有的流都是 `EventEmitter` 的实例。常用的事件有：
 
