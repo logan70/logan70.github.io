@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "理解并优化函数节流Throttle"
+title:  "JavaScript基础-函数节流Throttle"
 categories: Javasctipt
 date:   2018-11-2 11:48:05
 author: Logan
