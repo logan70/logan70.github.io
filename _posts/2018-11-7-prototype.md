@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'JavaScript基础-理解原型及原型链'
+title: 'JavaScript基础-原型及原型链'
 categories: JavaSctipt
 date: 2018-11-7 11:48:05
 author: Logan
